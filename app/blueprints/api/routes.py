@@ -3,6 +3,7 @@ from . import api
 from .auth import basic_auth, token_auth
 from app.models import User
 
+# login a user--- Get Token with Username/Password
 @api.route('/token', methods=['GET'])
 @basic_auth.login_required
 def index():
